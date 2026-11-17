@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Venus Handicrafts </title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+              <img src="logo image.png" alt="Venus Handicrafts Logo" class="logo-img circular-logo">
+              <span class="brand-text">
+                 Venus <span class="highlight"> Handicrafts </span>
+              </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sitemap">Site Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faqs">FAQs</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <div class="cart-icon" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Exquisite Handicrafts Since 1972</h1>
+                <p class="hero-subtitle">Venus Handicrafts brings you premium decorative items crafted with precision and artistry. Our collection features unique pieces that blend traditional craftsmanship with contemporary design, perfect for home décor, gifting, and collectors.</p>
+                <a href="#products" class="btn btn-gold btn-lg">Explore Collection</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">About Venus Handicrafts</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0 fade-in">
+                    <p>Since 1972, Venus Handicrafts has been a trusted name in manufacturing and exporting premium decorative handicrafts to global importers, wholesalers, and retailers. Our dedication to quality and artistry has earned us recognition on the global platform.</p>
+                    <p>We specialize in creating exquisite pieces that reflect the rich cultural heritage of craftsmanship while incorporating modern design elements. Each item is meticulously crafted by skilled artisans using traditional techniques passed down through generations.</p>
+                    <p>Our commitment to excellence and customer satisfaction has helped us maintain our market value and reputation worldwide. We continuously evolve our designs to meet contemporary tastes while preserving the essence of authentic handicraft traditions.</p>
+                </div>
+                <div class="col-lg-6 fade-in">
+                    <div class="row">
+                        <div class="col-6 mb-3" style="width: auto;">
+                            <img src="about img.png" class="img-fluid rounded" alt="Handicraft Workshop">
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section-padding bg-black">
+        <div class="container">
+            <h2 class="section-title">Our Handicraft Collections</h2>
+            <p class="text-center mb-5">Explore our premium collections of decorative handicrafts, each piece crafted with precision and artistic excellence.</p>
+            
+            <div class="row" id="products-container" >
+                <!-- Products will be dynamically generated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <p class="text-center mb-5">A visual journey through our exquisite handicraft collections and craftsmanship process.</p>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <img src="gallery img1.jpg" class="gallery-img" alt="Iron Handicrafts">
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <img src="gallery img2.jpg" class="gallery-img" alt="Glass Handicrafts">
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <img src="gallery img3.jpg" class="gallery-img" alt="Brass Handicrafts">
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <img src="gallery img4.jpg" class="gallery-img" alt="Wood Handicrafts">
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <img src="gallery img5.jpg" class="gallery-img" alt="Aluminium Handicrafts">
+                </div>
+                <div class="col-md-4 col-sm-6 mb-4">
+                    <img src="gallery img6.jpg" class="gallery-img" alt="Home Decor">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-black">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h4 class="gold-text mb-4">Get In Touch</h4>
+                    <p>Have questions about our products or need assistance with an order? Our team is here to help you.</p>
+                    
+                    <div class="mb-4">
+                        <h5 class="gold-text"><i class="fas fa-map-marker-alt me-2"></i> Address</h5>
+                        <p>245 Artisan Avenue, Suite 402<br>
+                           Craft District,<br>
+                             Los Angeles, CA 90021 <br>
+                              United States</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5 class="gold-text"><i class="fas fa-phone me-2"></i> Phone</h5>
+                        <p>+1 (213) 555-7842</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5 class="gold-text"><i class="fas fa-envelope me-2"></i> Email</h5>
+                        <p>usa@venushandicrafts.com</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5 class="gold-text"><i class="fas fa-clock me-2"></i> Business Hours</h5>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <h4 class="gold-text mb-4">Send Message</h4>
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Site Map Section -->
+    <section id="sitemap" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Site Map</h2>
+            <div class="row site-map">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="gold-text mb-3">Main Pages</h5>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="gold-text mb-3">Products</h5>
+                    <ul>
+                        <li><a href="#" class="product-link" data-category="iron">Iron Handicrafts</a></li>
+                        <li><a href="#" class="product-link" data-category="glass">Glass Handicrafts</a></li>
+                        <li><a href="#" class="product-link" data-category="brass">Brass Handicrafts</a></li>
+                        <li><a href="#" class="product-link" data-category="wood">Wood Handicrafts</a></li>
+                        <li><a href="#" class="product-link" data-category="aluminium">Aluminium Handicrafts</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="gold-text mb-3">More Products</h5>
+                    <ul>
+                        <li><a href="#" class="product-link" data-category="decorative">Handicraft Decorative</a></li>
+                        <li><a href="#" class="product-link" data-category="tableware">Table Wares</a></li>
+                        <li><a href="#" class="product-link" data-category="homedecor">Home Décor</a></li>
+                        <li><a href="#" class="product-link" data-category="candle">Candle Accessories</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="gold-text mb-3">Information</h5>
+                    <ul>
+                        <li><a href="#faqs">FAQs</a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#cartModal">Shopping Cart</a></li>
+                        <li><a href="#contact">Contact Information</a></li>
+                        <li><a href="#about">Company History</a></li>
+                        <li><a href="#gallery">Photo Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="section-padding bg-black">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="text-center mb-5">Find answers to common questions about our products, ordering, and shipping.</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What materials are used in your handicrafts?
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            We use a variety of high-quality materials including iron, brass, wood, glass, aluminium, and natural fibers. All materials are carefully selected for durability, aesthetics, and sustainability.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How long does shipping take?
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            Domestic shipping within United States typically takes 5-7 business days. International shipping times vary by destination, usually between 20-30 business days. Expedited shipping options are available.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Do you offer custom design services?
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            Yes, we offer custom design services for bulk orders. Our artisans can work with you to create unique pieces tailored to your specific requirements. Contact our sales team for more information.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What is your return policy?
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            We accept returns within 30 days of delivery for items in original condition. Custom-made items are non-returnable unless damaged or defective. Please contact our customer service to initiate a return.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How do I care for my handicraft items?
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            Care instructions vary by material. Generally, dust regularly with a soft cloth. Avoid direct sunlight, moisture, and harsh chemicals. Specific care instructions are provided with each product.
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Do you offer wholesale pricing?
+                            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            Yes, we offer competitive wholesale pricing for retailers, interior designers, and corporate clients. Please contact our wholesale department for pricing and minimum order requirements.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                     <a class="navbar-brand d-flex align-items-center" href="#">
+              <img src="logo image.png" alt="Venus Handicrafts Logo" class="logo-img circular-logo">
+              <span class="brand-text">
+                 Venus <span class="highlight"> Handicrafts </span>
+              </span>
+            </a>
+                    <p>Manufacturing and exporting premium decorative handicrafts since 1972. Bringing artisanal excellence to homes worldwide.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-facebook fa-lg text-gold" style="color: var(--primary-gold);"></i></a>
+                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-instagram fa-lg" style="color: var(--primary-gold);"></i></a>
+                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-twitter fa-lg" style="color: var(--primary-gold);"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-pinterest fa-lg" style="color: var(--primary-gold);"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="gold-text">Quick Links</h5>
+                      <ul class="footer-links">
+                          <li><a href="#home">Home</a></li>
+                          <li><a href="#about">About Us</a></li>
+                          <li><a href="#products">Products</a></li>
+                          <li><a href="#gallery">Gallery</a></li>
+                          <li><a href="#contact">Contact</a></li>
+                     </ul>
+                </div>
+
+               <div class="col-lg-4">
+                    <h5 class="footer-heading">Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates on new collections and exclusive offers.</p>
+                    <form id="newsletterForm">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                            <button class="btn btn-gold" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Venus Handicrafts. All Rights Reserved. | Since 1972</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal fade cart-modal" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title gold-text">Your Shopping Cart</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cart-items-container">
+                        <!-- Cart items will be dynamically added here -->
+                        <div class="text-center py-5" id="empty-cart-message">
+                            <i class="fas fa-shopping-cart fa-3x mb-3" style="color: var(--primary-gold); opacity: 0.5;"></i>
+                            <h5 class="gold-text">Your cart is empty</h5>
+                            <p class="text-gray">Add some beautiful handicrafts to your cart!</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top" id="cart-total-section" style="display: none !important;">
+                        <h5 class="gold-text mb-0">Total: <span id="cart-total">$0</span></h5>
+                        <button class="btn btn-gold" id="checkout-btn">Proceed to Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div class="modal fade product-detail-modal" id="productDetailModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title gold-text" id="detail-product-title">Product Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6" >
+                            <img id="detail-product-image" style="height: 65%;" src="" class="product-detail-img mb-3" alt="Product Image">
+                            <div class="row" id="product-items-container">
+                                <!-- Product items will be dynamically added here -->
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 id="detail-product-name" class="gold-text"></h4>
+                            <p id="detail-product-description"></p>
+                            <h5 class="gold-text mt-4">Price: <span id="detail-product-price"></span></h5>
+                            <div class="mt-4">
+                                <label for="quantity" class="form-label">Quantity:</label>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-outline-gold me-2" id="decrease-qty">-</button>
+                                    <input type="number" class="quantity-input" id="detail-quantity" value="1" min="1">
+                                    <button class="btn btn-outline-gold ms-2" id="increase-qty">+</button>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <button class="btn btn-gold me-3" id="add-to-cart-btn" style="margin-bottom: 5px;">Add to Cart</button>
+                                <button class="btn btn-outline-gold" data-bs-dismiss="modal">Continue Shopping</button>
+                            </div>
+                            <div class="mt-4">
+                                <h6 class="gold-text">Product Details</h6>
+                                <ul id="product-details-list">
+                                    <!-- Product details will be dynamically added here -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal fade product-detail-modal" id="checkoutModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title gold-text">Checkout</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="checkoutForm">
+                        <div class="mb-3">
+                            <label for="checkout-name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="checkout-name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="checkout-email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="checkout-email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="checkout-phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="checkout-phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="checkout-address" class="form-label">Shipping Address</label>
+                            <textarea class="form-control" id="checkout-address" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-4">
+                            <label for="checkout-payment" class="form-label">Payment Method</label>
+                            <select class="form-control" id="checkout-payment" required>
+                                <option value="">Select payment method</option>
+                                <option value="credit-card">Credit Card</option>
+                                <option value="debit-card">Debit Card</option>
+                                <option value="cod">Cash on Delivery</option>
+                            </select>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="gold-text mb-0">Total: <span id="checkout-total">$0</span></h6>
+                            <button type="submit" class="btn btn-gold">Place Order</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Success Modal -->
+    <div class="modal fade product-detail-modal" id="orderSuccessModal" tabindex="-1">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content text-center p-4">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <i class="fas fa-check-circle fa-3x" style="color: var(--primary-gold);"></i>
+                    </div>
+                    <h5 class="gold-text">Order Placed Successfully!</h5>
+                    <p>Thank you for your purchase. Your order confirmation will be sent to your email.</p>
+                    <button class="btn btn-gold mt-3" data-bs-dismiss="modal">Continue Shopping</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script src="demo.js"> </script>
+</body>
+</html>
